@@ -1,0 +1,20 @@
+/********************* COLORS */
+@theme {
+    /* breakpoints */
+    --breakpoint-max-w-reached: 1040px;
+
+    --color-*: initial;
+    --color-primary: #e17fa2;
+    --color-primary-dark: #b11c57;
+    --color-secondary: #e7de5a;
+    --color-gray: #d1c9cc;
+    
+    
+    --color-black: #000;
+    --color-white: #fff;
+
+    --font-title: 'Brimstone', serif;
+    --font-body: 'Times New Roman', serif;
+
+    --z-index-music-player: 50;
+}

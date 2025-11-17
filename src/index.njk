@@ -1,0 +1,63 @@
+---
+layout: layout.njk
+title: Homepage
+---
+{% from "src/components/musicPlayer.njk" import musicPlayer %}
+
+<h1 class="relative font-title bg-[linear-gradient(#b11c57,_#e17fa2)] bg-clip-text text-5xl text-center leading-[1.5] drop-shadow-secondary drop-shadow-[2px_2px_1px] max-w-[260px] mx-auto" style="-webkit-text-fill-color: transparent;">
+    <span>{{ general.title }}</span>
+    <img src="/public/img/sparkle.png" alt="" class="absolute top-0 left-[220px] w-9 h-9 -translate-y-1/3 ">
+    <img src="/public/img/sparkle.png" alt="" class="absolute top-[43%] left-[70px] w-9 h-9 ">
+</h1>
+
+<div class="w-[65%] max-w-[300px] mx-auto">
+    <img src="https:{{ general.nicosImage.fields.file.url }}" alt="Nicolas Gay" class="w-full border-3 border-secondary drop-shadow-primary drop-shadow-[0_0_40px] mt-6">
+</div>
+
+<p class="text-white my-10 text-[18px] max-w-[420px] mx-auto">{{ general.description }}</p>
+
+<div id="musicPlayer" class="sticky top-0 -ml-3 w-[calc(100%_+_1.5rem)] mt-10 z-music-player">
+    {{ musicPlayer(musics) }}
+</div>
+
+<h2 class="mt-10 mb-6">{{ general.projectsTitle }}</h2>
+<ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+    {% for project in projects %}
+        <li>
+            <a href="/project/{{ project.fields.title | slugify }}" class="group">
+                <img src="https:{{ project.fields.image_main.fields.file.url }}" alt="{{ project.fields.title }}" class="w-full aspect-square object-cover" style="mask-image: linear-gradient(0deg,rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 50%);">
+                <div class="block text-[20px] leading-[1.1] -translate-y-6 group-hover:text-secondary">{{project.fields.title}}</div>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+<h2 class="mt-10 mb-6">{{ general.galleryTitle }}</h2>
+<ul class="flex gap-3">
+    {% for category in categories %}
+        <li>
+            <button class="isotope-filter flex flex-col items-center gap-2 group cursor-pointer" data-filter=".{{ category.fields.title | slugify }}">
+                <img src="https:{{ category.fields.image.fields.file.url }}" alt="{{ category.fields.title }}" class="h-9 object-contain">
+                <span class="text-[14px] group-hover:text-secondary">{{ category.fields.title }}</span>
+            </button>
+        </li>
+    {% endfor %}
+</ul>
+<div class="isotope-grid mt-6">
+    <div class="grid-sizer w-[calc(50%_-_6px)]"></div>
+    <div class="gutter-sizer w-3"></div>
+    {% for project in projects %}
+        {% for image in project.fields.images %}
+            <a href="https:{{ image.fields.file.url }}" data-fancybox="{{ project.fields.title }}" class="isotope-item w-[calc(50%_-_6px)] mb-3 {% for category in project.fields.categories %}{{ category.fields.title | slugify }} {% endfor %}">
+                <img src="https:{{ image.fields.file.url }}" alt="{{ project.fields.title }}" class="w-full" >
+            </a>
+        {% endfor %}
+    {% endfor %}
+</div>
+
+<script type="text/javascript">
+    {
+        # console.log({{ projects | dump(2) | safe }});
+        #
+    }
+</script>
