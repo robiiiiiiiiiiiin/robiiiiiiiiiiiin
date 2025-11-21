@@ -1,0 +1,38 @@
+---
+layout: layout_contentPage.njk
+title: ⏾ Slumber
+---
+{% backButton "/" %}
+{% titlePage "⏾ Slumber" %}
+
+<div class="flex gap-x-4 gap-y-8 flex-wrap">
+    {# SLEEP PARALYSIS FR #}
+    {% box_1 "My_sleep_paralysis_fr.md" %}
+    {% renderFile "src/slumber/My_sleep_paralysis_fr.md" %}
+    {% endbox_1 %}
+
+    {% box_1 "☽" %}
+    ¨¨
+    {% endbox_1 %}
+
+    <div class="flex flex-col">
+        {# IMAGE COME TRUE #}
+        <div class="max-w-box-1">
+            <img src="/_public/img/please_wake_up.jpg" alt="please wake up">
+        </div>
+        {# GIF COME TRUE #}
+        <div class="max-w-box-1 rounded-md overflow-hidden border border-gray">
+            <img src="/_public/img/come_true_(2).gif" alt="Come True">
+        </div>
+    </div>
+
+    {# FEVER DREAM #}
+    {% box_1 "My_fever_dream.md" %}
+    {% renderFile "src/slumber/My_fever_dream.md" %}
+    {% endbox_1 %}
+
+</div>
+
+<div class="text-[0.875rem] font-mono mt-8">
+    Have a good night, asleep or awake
+</div>

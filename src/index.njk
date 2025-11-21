@@ -4,9 +4,13 @@ title: Homepage
 ---
 <h1 class="mb-[1rem]">❊ helloo <span class="font-mono">:)</span> ❊</h1>
 
-<div class="flex flex-wrap gap-4">
+<div class="flex flex-wrap gap-x-4 gap-y-8">
+
+    {# POPPY #}
     {% box_1 "poppy.gif" %}
     <img src="/_public/img/poppy.gif" alt="Poppy">
+
+    {# LINKS TO PAGES #}
     {% endbox_1 %}
     <div class="flex flex-col gap-2">
         {% box_1 %}
@@ -21,7 +25,29 @@ title: Homepage
         {% box_1 %}
         <a href="/geodetective">Geodetective/</a>
         {% endbox_1 %}
+        {% box_1 %}
+        <a href="/slumber">⏾ Slumber/</a>
+        {% endbox_1 %}
     </div>
+</div>
+    
+<div class="flex flex-wrap gap-x-4 gap-y-8 mt-8">
+
+    {# RANDOM THOUGHT #}
+    <div class="flex flex-col">
+        {% box_1 "🎔❁⚘❦" %}
+        <p>⁕ Send handwritten letters to your friends
+            ⁕ Put trinkets in their mailbox
+        </p>
+        {% endbox_1 %}
+        {% box_1 "food" %}
+        <p>⁕ Plant fruit trees in the street</p>
+        {% endbox_1 %}
+        {% box_1 "flowers" %}
+        <p>⁕ Pick some flowers in the street and gift them to your friends when they invite you over</p>
+        {% endbox_1 %}
+    </div>
+
 </div>
 
 <script type="text/javascript"></script>
