@@ -14,7 +14,6 @@
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-img": "^6.0.2",
     "dotenv": "^17.2.0",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6"

@@ -4,7 +4,6 @@ import dotenv from 'dotenv';
 import cssnano from 'cssnano';
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import * as esbuild from 'esbuild';
 import { RenderPlugin } from "@11ty/eleventy";
 import components from './src/_includes/components.js';

@@ -10,3 +10,12 @@
 .markdown-wrapper a {
     text-decoration: underline;
 }
+
+.markdown-wrapper ol {
+    list-style-type: decimal;
+    margin-left: 1rem;
+    white-space: normal;
+}
+.markdown-wrapper ol li {
+    margin: 0.25rem 0;
+}

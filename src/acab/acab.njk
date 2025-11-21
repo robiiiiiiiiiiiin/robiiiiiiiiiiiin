@@ -1,0 +1,69 @@
+---
+layout: layout_contentPage.njk
+title: ⒶCⒶB
+---
+{% backButton "/" %}
+{% titlePage "ⒶCⒶB" %}
+
+<div class="flex gap-x-4 gap-y-8 flex-wrap">
+
+    <div class="flex flex-col gap-4">
+        {# Tout péter #}
+        {% box_1 "révolte" %}
+        <div class="flex flex-col gap-2">
+            <a href="https://infokiosques.net/insurrections" target="_blank" rel="noopener noreferrer">En vrac...</a>
+        </div>
+        {% endbox_1 %}
+
+        {# antirep #}
+        {% box_1 "antirep" %}
+        <div class="flex flex-col gap-2">
+            <a href="https://admin.climatestrike.ch/uploads/Anti_Rep_RUFC_FR_4d584357ea.pdf" target="_blank" rel="noopener noreferrer">· AntiRep* Info</a>
+            <a href="https://admin.climatestrike.ch/uploads/Legal_RU_4_C_FR_200920_3112092990.pdf" target="_blank" rel="noopener noreferrer">· Brochure légale Berne</a>
+            <a href="https://renverse.co/infos-locales/article/une-brochure-pour-faire-face-a-la-repression-3086" target="_blank" rel="noopener noreferrer">· Article Renversé</a>
+            <a href="https://infokiosques.net/spip.php?article1863" target="_blank" rel="noopener noreferrer">· Une BD</a>
+            <a href="https://www.amnesty.ch/fr/themes/droit-de-manifester/guide-manif/ai_demo_guide_fr_web.pdf" target="_blank" rel="noopener noreferrer">· Guide d'Amnesty</a>
+            <br>
+            <div>"Je n'ai rien à déclarer"</div>
+
+        </div>
+        {% endbox_1 %}
+    </div>
+
+    {# STREET MEDIC ZINES #}
+    {% box_1 "street medic ⛑" %}
+    <div class="flex flex-col gap-2">
+        <div>Zines (FR)</div>
+        <a href="https://infokiosques.net/spip.php?article2092" target="_blank" rel="noopener noreferrer">· Touxtes Street Medics</a>
+        <a href="https://infokiosques.net/spip.php?article1565" target="_blank" rel="noopener noreferrer">· (Se) protéger et (se) soigner en manif</a>
+        <a href="https://infokiosques.net/spip.php?article2001" target="_blank" rel="noopener noreferrer">· Tuto Medic</a>
+        <img src="/_public/img/Street_medics_autonomes_berlin_ouest_1980.jpeg" alt="Street medics autonomes berlin ouest 1980">
+    </div>
+    {% endbox_1 %}
+
+    {# image #}
+    {% box_1 %}
+    <div class="flex flex-col gap-2">
+        <img src="/_public/img/Manifestation-Creys-Malville-contre-superphenix-1977.jpg" alt="Manifestation Creys Malville contre superphenix 1977.jpg">
+    </div>
+    {% endbox_1 %}
+
+    {# superphenix #}
+    {% box_1 "superphénix" %}
+    <div class="flex flex-col gap-2">
+        <a href="https://fr.wikipedia.org/wiki/Superph%C3%A9nix#1982_:_attaque_du_chantier" target="_blank" rel="noopener noreferrer">Le type a juste tiré au lance roquette sur la centrale...</a>
+        <p>
+            "Le 18 janvier 1982, une attaque au lance-roquettes vise le chantier de la centrale nucléaire de Superphénix, sans faire de victimes[11], mais occasionne quelques dégâts matériels."
+        </p>
+        <img src="/_public/img/Manifestation-Creys-Malville-contre-superphenix-1977_(2).jpg" alt="Manifestation Creys Malville contre superphenix 1977.jpg">
+    </div>
+    {% endbox_1 %}
+
+    {# SUV #}
+    {% box_1 "Mode d'emploi pour dégonfler un SUV" %}
+    <div class="flex flex-col gap-2">
+        {% renderFile "src/acab/Mode_d-Emploi_Pour_Dégonfler_Un_SUV.md" %}
+        <a href="https://droges.bandcamp.com/track/mode-demploi-pour-d-gonfler-un-suv" target="_blank" rel="noopener noreferrer">En chanson</a>
+    </div>
+    {% endbox_1 %}
+</div>
