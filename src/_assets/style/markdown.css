@@ -11,11 +11,22 @@
     text-decoration: underline;
 }
 
-.markdown-wrapper ol {
-    list-style-type: decimal;
+/* OL / UL */
+.markdown-wrapper ol,
+.markdown-wrapper ul {
     margin-left: 1rem;
     white-space: normal;
 }
-.markdown-wrapper ol li {
+.markdown-wrapper ol {
+    list-style-type: decimal;
+}
+.markdown-wrapper ul {
+    list-style-type: square;
+}
+.markdown-wrapper ul > li > ul {
+    list-style-type: circle;
+}
+.markdown-wrapper ol li,
+.markdown-wrapper ul li {
     margin: 0.25rem 0;
 }

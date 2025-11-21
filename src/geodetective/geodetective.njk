@@ -1,0 +1,29 @@
+---
+layout: layout_contentPage.njk
+title: Geodetective
+---
+{% backButton "/" %}
+{% titlePage "Geodetective" %}
+
+<div class="flex gap-x-4 gap-y-8 flex-wrap mt-16">
+    {# RULES #}
+    {% box_1 "Rules" %}
+    <div class="flex flex-col gap-2">
+        {% renderFile "src/geodetective/Geodetective_rules.md" %}
+    </div>
+    {% endbox_1 %}
+    {% box_1 "Answers" %}
+        <p>The answers are not on this website, I'm sorry (I didn't even keep them for myself...)</p>
+        <p>But I know that every challenge is doable, for a couple of them with a bit of determination <small>(the 16th, not to mention him)</small></p>
+    {% endbox_1 %}
+</div>
+
+<div class="flex gap-x-4 gap-y-8 flex-wrap mt-16">
+
+    {% for i in range(1, 17) %}
+        {% box_1 "Challenge " + i %}
+        <img src="/_public/img/geodetective/geodetective-{{ i }}.jpg" alt="Geodetective Challenge {{ i }}">
+        {% endbox_1 %}
+    {% endfor %}
+
+</div>
