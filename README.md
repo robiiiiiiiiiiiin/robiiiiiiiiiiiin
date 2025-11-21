@@ -1,5 +1,6 @@
-# Test 11ty 🦝🎈 :)
-Could be a "Base 11ty" in a near future.
+# Build on nicolasgay which is built on Test 11ty 🦝🎈 :)
+yeah
+Nothing is up to date
 
 ## 📝 Todo
 - Optimisation des images récupérées depuis Contentful
@@ -15,14 +16,14 @@ Could be a "Base 11ty" in a near future.
 ### Styling
 The project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
 ### JS
-At the moment, every file in the `src/assets/js` folder are simply copied in the build directory using `addPassthroughCopy()` in `eleventy.config.js`.
+At the moment, every file in the `src/_assets/js` folder are simply copied in the build directory using `addPassthroughCopy()` in `eleventy.config.js`.
 ### Image optimisation
 `eleventyImageTransformPlugin` automatically generates multiple image sizes and formats (webp, abif, jpg) at build time.  
 When you use an `<img>` tag, it will automatically generate a `<picture>` element with the full srcset etc.
   
 Images fetched from Contentful should not be handled by `eleventyImageTransformPlugin`. To do this, you need to add `eleventy:ignore` to the `<img>` tag.
 ### Public folder
-The `src/public` folder is used to store static files that should be copied to the build directory.  
+The `src/_public` folder is used to store static files that should be copied to the build directory.  
 It can be useful if an image doesn't need to be optimised, or if you want to use a file that is not handled by Eleventy (like a favicon, robots.txt, etc.).
 ### Environment variables
 The project uses dotenv to set environment variables.  

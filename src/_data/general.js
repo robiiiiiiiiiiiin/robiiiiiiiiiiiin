@@ -1,4 +1,4 @@
-import * as contentful from 'contentful'
+/* import * as contentful from 'contentful'
 
 const client = contentful.createClient({
   space: process.env.CONTENTFUL_SPACE,
@@ -18,4 +18,4 @@ const getGeneralOptions = async () => {
 export default async () => {
     const entries = await getGeneralOptions()
     return entries
-}
+} */

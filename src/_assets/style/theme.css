@@ -14,7 +14,8 @@
     --color-white: #fff;
 
     --font-title: 'Brimstone', serif;
-    --font-body: 'Times New Roman', serif;
+    --font-body: 'Arial', sans-serif;
+    --font-mono: monospace;
 
     --z-index-music-player: 50;
 }

@@ -1,0 +1,12 @@
+.markdown-wrapper {
+    overflow-wrap: break-word;
+}
+.markdown-wrapper > * {
+    white-space: pre-line;
+}
+.markdown-wrapper p+p {
+    margin-top: 1rem;
+}
+.markdown-wrapper a {
+    text-decoration: underline;
+}

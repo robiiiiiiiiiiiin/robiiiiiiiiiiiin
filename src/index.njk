@@ -2,12 +2,10 @@
 layout: layout.njk
 title: Homepage
 ---
-{% from "src/components/musicPlayer.njk" import musicPlayer %}
-
 <h1 class="relative font-title bg-[linear-gradient(#b11c57,_#e17fa2)] bg-clip-text text-5xl text-center leading-[1.5] drop-shadow-secondary drop-shadow-[2px_2px_1px] max-w-[260px] mx-auto" style="-webkit-text-fill-color: transparent;">
     <span>{{ general.title }}</span>
-    <img src="/public/img/sparkle.png" alt="" class="absolute top-0 left-[220px] w-9 h-9 -translate-y-1/3 ">
-    <img src="/public/img/sparkle.png" alt="" class="absolute top-[43%] left-[70px] w-9 h-9 ">
+    <img src="/_public/img/sparkle.png" alt="" class="absolute top-0 left-[220px] w-9 h-9 -translate-y-1/3 ">
+    <img src="/_public/img/sparkle.png" alt="" class="absolute top-[43%] left-[70px] w-9 h-9 ">
 </h1>
 
 <div class="w-[65%] max-w-[300px] mx-auto">
@@ -15,10 +13,6 @@ title: Homepage
 </div>
 
 <p class="text-white my-10 text-[18px] max-w-[420px] mx-auto">{{ general.description }}</p>
-
-<div id="musicPlayer" class="sticky top-0 -ml-3 w-[calc(100%_+_1.5rem)] mt-10 z-music-player">
-    {{ musicPlayer(musics) }}
-</div>
 
 <h2 class="mt-10 mb-6">{{ general.projectsTitle }}</h2>
 <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -56,8 +50,4 @@ title: Homepage
 </div>
 
 <script type="text/javascript">
-    {
-        # console.log({{ projects | dump(2) | safe }});
-        #
-    }
 </script>

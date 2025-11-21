@@ -6,6 +6,8 @@ import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import * as esbuild from 'esbuild';
+import { RenderPlugin } from "@11ty/eleventy";
+import components from './src/_includes/components.js';
 
 export default function (eleventyConfig) {
     // Configure dotenv based on NODE_ENV
@@ -25,30 +27,17 @@ export default function (eleventyConfig) {
     // ****************************************************************** BASE CONFIG ********************** //
     // Order matters, put this at the top of your configuration file.
     eleventyConfig.setInputDirectory("src");
-    eleventyConfig.addPassthroughCopy("src/public");
+    eleventyConfig.addPassthroughCopy("src/_public");
     
     // Watch CSS and JS files for changes
-    eleventyConfig.addWatchTarget("./src/assets/style/");
-    eleventyConfig.addWatchTarget("./src/assets/js/");
-    
-    // JavaScript will be bundled by esbuild in eleventy.before, so we don't need to copy individual files
-    // eleventyConfig.addPassthroughCopy({ "src/assets/js": "js" });
-    /* eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-        // output image formats
-        formats: ["avif", "webp", "auto"],
+    eleventyConfig.addWatchTarget("./src/_assets/style/");
+    eleventyConfig.addWatchTarget("./src/_assets/js/");
 
-        // output image widths
-        widths: [460, 1024, 2048, "auto"],
+    // Plugins
+    eleventyConfig.addPlugin(RenderPlugin); // Render markdown (and other ?) files directly in a page
 
-        // optional, attributes assigned on <img> nodes override these values
-        htmlOptions: {
-            imgAttributes: {
-                loading: "lazy",
-                decoding: "async",
-            },
-            pictureAttributes: {}
-        },
-    }); */
+    // Import shortcode / components
+    components(eleventyConfig);
 
     // ****************************************************************** TAILWIND ********************** //
     const postcssConfig = [
@@ -63,7 +52,7 @@ export default function (eleventyConfig) {
 
     eleventyConfig.on('eleventy.before', async () => {
         // ****************************************************************** CSS PROCESSING ********************** //
-        const tailwindInputPath = path.resolve('./src/assets/style/bundle.css');
+        const tailwindInputPath = path.resolve('./src/_assets/style/bundle.css');
         const tailwindOutputPath = './_site/bundle.css';
 
         const cssContent = fs.readFileSync(tailwindInputPath, 'utf8');
@@ -88,7 +77,7 @@ export default function (eleventyConfig) {
 
         // Simple build - let separate esbuild process handle watching
         await esbuild.build({
-            entryPoints: ['src/assets/js/main.js'],
+            entryPoints: ['src/_assets/js/main.js'],
             bundle: true,
             outfile: './_site/js/bundle.js',
             format: 'iife',
