@@ -14,10 +14,7 @@ title: Homepage
     {% endbox_1 %}
     <div class="flex flex-col gap-2">
         {% box_1 %}
-        <a href="/zines">zines/</a>
-        {% endbox_1 %}
-        {% box_1 %}
-        <a href="/pics">pics/</a>
+        <a href="/slumber">⏾ Slumber/</a>
         {% endbox_1 %}
         {% box_1 %}
         <a href="/acab">ⒶCⒶB/</a>
@@ -26,11 +23,14 @@ title: Homepage
         <a href="/geodetective">Geodetective/</a>
         {% endbox_1 %}
         {% box_1 %}
-        <a href="/slumber">⏾ Slumber/</a>
+        <a href="/zines">zines/</a>
+        {% endbox_1 %}
+        {% box_1 %}
+        <a href="/pics">pics/</a>
         {% endbox_1 %}
     </div>
 </div>
-    
+
 <div class="flex flex-wrap gap-x-4 gap-y-8 mt-8">
 
     {# RANDOM THOUGHT #}
@@ -45,6 +45,18 @@ title: Homepage
         {% endbox_1 %}
         {% box_1 "flowers" %}
         <p>⁕ Pick some flowers in the street and gift them to your friends when they invite you over</p>
+        {% endbox_1 %}
+        {% box_1 "friends" %}
+            {% renderFile "src/friends.md" %}
+        {% endbox_1 %}
+    </div>
+
+    {# COURAGE LE CHIEN FROUSSARG #}
+    <div class="ml-auto">
+        {% box_1 "The_Last_of_the_Star_Makers_intro.mp4" %}
+        <video controls>
+            <source src="/_public/video/The_Last_of_the_Star_Makers_intro.mp4" type="video/mp4">
+        </video>
         {% endbox_1 %}
     </div>
 

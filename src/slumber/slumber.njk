@@ -18,7 +18,7 @@ title: ⏾ Slumber
     <div class="flex flex-col">
         {# IMAGE COME TRUE #}
         <div class="max-w-box-1">
-            <img src="/_public/img/please_wake_up.jpg" alt="please wake up">
+            <img src="/_public/img/please_wake_up.jpg" class="mix-blend-screen" alt="please wake up">
         </div>
         {# GIF COME TRUE #}
         <div class="max-w-box-1 rounded-md overflow-hidden border border-gray">
@@ -26,10 +26,18 @@ title: ⏾ Slumber
         </div>
     </div>
 
-    {# FEVER DREAM #}
-    {% box_1 "My_fever_dream.md" %}
-    {% renderFile "src/slumber/My_fever_dream.md" %}
-    {% endbox_1 %}
+    <div class="flex flex-col">
+        {# FEVER DREAM #}
+        {# IMAGE COME TRUE #}
+        <div class="max-w-box-1">
+            <img src="/_public/img/stress.jpeg" class="mix-blend-hard-light rounded-t-md" alt="Image that makes me feel, just a bit, the stress of my fever dreams">
+        </div>
+        <div class="relative">
+            {% box_1 "My_fever_dream.md" %}
+            {% renderFile "src/slumber/My_fever_dream.md" %}
+            {% endbox_1 %}
+        </div>
+    </div>
 
 </div>
 
