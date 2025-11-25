@@ -1,12 +1,12 @@
 export default function(eleventyConfig) {
 
     // Card
-    eleventyConfig.addPairedShortcode("box_1", function(content, title = "") {
-        const titleHtml = title ? `<h2 class="w-fit font-mono -mt-[0.75rem] -ml-[2px] bg-[#030303] pt-[2px] pb-[4px] pr-[7px]">${title}</h2>` : '';
+    eleventyConfig.addPairedShortcode("box_1", function(content, title = "", boxClass = "", wrapperClass = "") {
+        const titleHtml = title ? `<h2 class="w-fit font-mono text-[0.875rem] -mt-[0.75rem] -ml-[2px] bg-[#030303] pt-[2px] pb-[4px] pr-[7px]">${title}</h2>` : '';
         return `
-        <div class="box w-fit h-fit max-w-box-1 border border-gray rounded-md bg-[#030303]">
+        <div class="box w-fit h-fit max-w-box-1 border border-gray rounded-md bg-[#030303] ${boxClass}">
             ${titleHtml}
-            <div class="markdown-wrapper max-h-[28rem] overflow-y-auto p-3 text-[0.875rem]">
+            <div class="markdown-wrapper max-h-[28rem] overflow-y-auto p-3 text-[0.9375rem] ${wrapperClass}">
                 ${content}
             </div>
         </div>`;

@@ -1,0 +1,91 @@
+---
+layout: layout_contentPage.njk
+title: Have you been to the Mystery Park ?
+---
+{% backButton "/" %}
+{% titlePage "Have you been to the Mystery Park ?" %}
+
+<div class="flex flex-wrap gap-x-4 gap-y-8">
+    {# INTRO #}
+    {% box_1 "The Mystery Park", "", "!max-h-none" %}
+    {% renderFile "src/have-you-been-to-the-mystery-park/the-mystery-park.md" %}
+    <img src="/_public/img/mysterypark_2002_logo.png" class="mt-4" title="Mystery Park logo in 2002">
+    {% endbox_1 %}
+
+    {# IMAGE - WALLPAPER #}
+    <div class="flex flex-col items-end gap-1 ml-auto">
+        {% box_1 "official_mysterypark_wallpaper_2005.jpg", "!max-w-box-3", "!max-h-none" %}
+        <img src="/_public/img/official_mysterypark_wallpaper_2005.jpg" alt="Mystery Park Wallpaper">
+        {% endbox_1 %}
+        <p class="text-sm">This was an official wallpaper you could download on their 2005 website</p>
+    </div>
+
+    <div class="flex flex-col gap-8">
+        {# THE PLACE #}
+        {% box_1 "The Place" %}
+        {% renderFile "src/have-you-been-to-the-mystery-park/the-place.md" %}
+        {% endbox_1 %}
+    </div>
+
+    {# THE ATTRACTIONS #}
+    {% box_1 "The Pavilions / Attractions" %}
+    {% renderFile "src/have-you-been-to-the-mystery-park/the-pavilions.md" %}
+    {% endbox_1 %}
+
+    {# IMAGE - PLAN #}
+    {% box_1 "official_mystery_park_plan.jpg", "!max-w-box-2" %}
+    <img src="/_public/img/mysterypark_plan.jpg" alt="Mystery Park Plan">
+    {% endbox_1 %}
+
+    {# ATTRACTION DISCLAIMER #}
+    <div class="flex flex-col">
+    <img src="/_public/img/mysterypark_gif_2005.gif" title="Random Mystery Park gif featured on their old website" class="max-w-[20rem]">
+    {% box_1 "Disclaimer" %}
+    <p>The following texts describing the pavilions are taken directy from the official Mystery Park brochures and website. The website is no longer online but it's on the wayback machine (between 2003 and 2005).</p>
+    <p>You'll find the official PDF brochure for each pavilions</p>
+    {% endbox_1 %}
+    </div>
+
+    {# *********************************************************** VIMANAS ************************************************************ #}
+
+    <div class="flex flex-col">
+        {# PAVILION 1 - VIMANA #}
+        {% box_1 "Pavilion 1 - Vimana" %}
+        {% renderFile "src/have-you-been-to-the-mystery-park/Vimanas_Space_Shuttles_of_Ancient_India.md" %}
+        {% endbox_1 %}
+        {% box_1 "Brochures", "", "!text-[0.75rem]" %}
+            <a href="/_public/docs/mysterypark_vimana_en.pdf" target="_blank">mysterypark_vimana_en.pdf</a><br>
+            <a href="/_public/docs/mysterypark_vimana_fr.pdf" target="_blank">mysterypark_vimana_fr.pdf</a><br>
+            <a href="/_public/docs/mysterypark_vimana_de.pdf" target="_blank">mysterypark_vimana_de.pdf</a>
+        {% endbox_1 %}
+    </div>
+
+    {# IMAGE - VIMANA #}
+    <img src="/_public/img/vimana.jpg" title="Vimana image found on the 2005 Mystery Park website" class="h-fit">
+    <img src="/_public/img/vimana_2.jpeg" title="Vimana image found on Google image" class="h-fit">
+
+    {# *********************************************************** ORIENT ************************************************************ #}
+
+    <div class="flex flex-col">
+        {# PAVILION 2 - ORIENT #}
+        {% box_1 "Pavilion 2 - Orient" %}
+        {% renderFile "src/have-you-been-to-the-mystery-park/Orient_Pyramids_built_without_blueprints.md" %}
+        {% endbox_1 %}
+        {% box_1 "Brochures", "", "!text-[0.75rem]" %}
+            <a href="/_public/docs/mysterypark_orient_en.pdf" target="_blank">mysterypark_orient_en.pdf</a><br>
+            <a href="/_public/docs/mysterypark_orient_fr.pdf" target="_blank">mysterypark_orient_fr.pdf</a><br>
+            <a href="/_public/docs/mysterypark_orient_de.pdf" target="_blank">mysterypark_orient_de.pdf</a>
+        {% endbox_1 %}
+    </div>
+
+    {# PAVILION 2 - ORIENT - NOTS #}
+    {% box_1 "Pavilion 2 - Notes" %}
+    <p>In addition to theories about how the pyramids might have been built (and why it might have been ALIENS, or rather ancient astronauts, I should say), the doc also talked about:</p>
+    <ul>
+        <li>The position of the pyramids, which is extremely precise and follows astronomical patterns.</li>
+        <li>The fact that egyptian had access to electricity, as shown by the "Baghdad Battery"</li>
+    {% endbox_1 %}
+
+</div>
+
+{# <img src="/_public/img/mysterypark_gif_2005.gif" alt="Random Mystery Park gif featured on their old website"> #}
