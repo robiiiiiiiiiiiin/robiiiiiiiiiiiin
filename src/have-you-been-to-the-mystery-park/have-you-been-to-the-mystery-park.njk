@@ -27,10 +27,39 @@ title: Have you been to the Mystery Park ?
         {% endbox_1 %}
     </div>
 
-    {# THE ATTRACTIONS #}
-    {% box_1 "The Pavilions / Attractions" %}
-    {% renderFile "src/have-you-been-to-the-mystery-park/the-pavilions.md" %}
-    {% endbox_1 %}
+    <div class="flex flex-col gap-4">
+        {# THE ATTRACTIONS #}
+        {% box_1 "The Pavilions / Attractions" %}
+        {% renderFile "src/have-you-been-to-the-mystery-park/the-pavilions.md" %}
+        {% endbox_1 %}
+        <div class="hidden whitespace-pre font-mono text-[0.5rem]">
+            .     .       .  .   . .   .   . .    +  .
+  .     .  :     .    .. :. .___---------___.
+       .  .   .    .  :.:. _".^ .^ ^.  '.. :"-_. .
+    .  :       .  .  .:../:            . .^  :.:\.
+        .   . :: +. :.:/: .   .    .        . . .:\
+ .  :    .     . _ :::/:               .  ^ .  . .:\
+  .. . .   . - : :.:./.                        .  .:\
+  .      .     . :..|:                    .  .  ^. .:|
+    .       . : : ..||        .                . . !:|
+  .     . . . ::. ::\(                           . :)/
+ .   .     : . : .:.|. ######              .#######::|
+  :.. .  :-  : .:  ::|.#######           ..########:|
+ .  .  .  ..  .  .. :\ ########          :######## :/
+  .        .+ :: : -.:\ ########       . ########.:/
+    .  .+   . . . . :.:\. #######       #######..:/
+      :: . . . . ::.:..:.\           .   .   ..:/
+   .   .   .  .. :  -::::.\.       | |     . .:/
+      .  :  .  .  .-:.":.::.\             ..:/
+ .      -.   . . . .: .:::.:.\.           .:/
+.   .   .  :      : ....::_:..:\   ___.  :/
+   .   .  .   .:. .. .  .: :.:.:\       :/
+     +   .   .   : . ::. :.:. .:.|\  .:/|
+     .         +   .  .  ...:: ..|  --.:|
+.      . . .   .  .  . ... :..:.."(  ..)"
+ .   .       .      :  .   .: ::/  .  .::\
+        </div>
+    </div>
 
     {# IMAGE - PLAN #}
     {% box_1 "official_mystery_park_plan.jpg", "!max-w-box-2" %}
@@ -39,14 +68,18 @@ title: Have you been to the Mystery Park ?
 
     {# ATTRACTION DISCLAIMER #}
     <div class="flex flex-col">
-    <img src="/_public/img/mysterypark_gif_2005.gif" title="Random Mystery Park gif featured on their old website" class="max-w-[20rem]">
-    {% box_1 "Disclaimer" %}
-    <p>The following texts describing the pavilions are taken directy from the official Mystery Park brochures and website. The website is no longer online but it's on the wayback machine (between 2003 and 2005).</p>
-    <p>You'll find the official PDF brochure for each pavilions</p>
-    {% endbox_1 %}
+        <img src="/_public/img/mysterypark_gif_2005.gif" title="Random Mystery Park gif featured on their old website" class="max-w-[20rem]">
+        {% box_1 "Disclaimer" %}
+        <p>The following texts describing the pavilions are taken directy from the official Mystery Park brochures and website. The website is no longer online but it's on the wayback machine (between 2003 and 2005).</p>
+        <p>You'll find the official PDF brochure for each pavilions</p>
+        {% endbox_1 %}
     </div>
 
     {# *********************************************************** VIMANAS ************************************************************ #}
+
+    {# IMAGE - VIMANA #}
+    <img src="/_public/img/vimana_2.jpeg" title="Vimana image found on Google image" class="h-fit self-end mb-20">
+    <img src="/_public/img/vimana.jpg" title="Vimana image found on the 2005 Mystery Park website" class="h-fit self-end mb-20">
 
     <div class="flex flex-col">
         {# PAVILION 1 - VIMANA #}
@@ -54,15 +87,12 @@ title: Have you been to the Mystery Park ?
         {% renderFile "src/have-you-been-to-the-mystery-park/Vimanas_Space_Shuttles_of_Ancient_India.md" %}
         {% endbox_1 %}
         {% box_1 "Brochures", "", "!text-[0.75rem]" %}
-            <a href="/_public/docs/mysterypark_vimana_en.pdf" target="_blank">mysterypark_vimana_en.pdf</a><br>
-            <a href="/_public/docs/mysterypark_vimana_fr.pdf" target="_blank">mysterypark_vimana_fr.pdf</a><br>
-            <a href="/_public/docs/mysterypark_vimana_de.pdf" target="_blank">mysterypark_vimana_de.pdf</a>
+        <a href="/_public/docs/mysterypark_vimana_en.pdf" target="_blank">mysterypark_vimana_en.pdf</a><br>
+        <a href="/_public/docs/mysterypark_vimana_fr.pdf" target="_blank">mysterypark_vimana_fr.pdf</a><br>
+        <a href="/_public/docs/mysterypark_vimana_de.pdf" target="_blank">mysterypark_vimana_de.pdf</a>
         {% endbox_1 %}
     </div>
 
-    {# IMAGE - VIMANA #}
-    <img src="/_public/img/vimana.jpg" title="Vimana image found on the 2005 Mystery Park website" class="h-fit">
-    <img src="/_public/img/vimana_2.jpeg" title="Vimana image found on Google image" class="h-fit">
 
     {# *********************************************************** ORIENT ************************************************************ #}
 
@@ -72,21 +102,40 @@ title: Have you been to the Mystery Park ?
         {% renderFile "src/have-you-been-to-the-mystery-park/Orient_Pyramids_built_without_blueprints.md" %}
         {% endbox_1 %}
         {% box_1 "Brochures", "", "!text-[0.75rem]" %}
-            <a href="/_public/docs/mysterypark_orient_en.pdf" target="_blank">mysterypark_orient_en.pdf</a><br>
-            <a href="/_public/docs/mysterypark_orient_fr.pdf" target="_blank">mysterypark_orient_fr.pdf</a><br>
-            <a href="/_public/docs/mysterypark_orient_de.pdf" target="_blank">mysterypark_orient_de.pdf</a>
+        <a href="/_public/docs/mysterypark_orient_en.pdf" target="_blank">mysterypark_orient_en.pdf</a><br>
+        <a href="/_public/docs/mysterypark_orient_fr.pdf" target="_blank">mysterypark_orient_fr.pdf</a><br>
+        <a href="/_public/docs/mysterypark_orient_de.pdf" target="_blank">mysterypark_orient_de.pdf</a>
         {% endbox_1 %}
     </div>
 
-    {# PAVILION 2 - ORIENT - NOTS #}
-    {% box_1 "Pavilion 2 - Notes" %}
-    <p>In addition to theories about how the pyramids might have been built (and why it might have been ALIENS, or rather ancient astronauts, I should say), the doc also talked about:</p>
-    <ul>
-        <li>The position of the pyramids, which is extremely precise and follows astronomical patterns.</li>
-        <li>The fact that egyptian had access to electricity, as shown by the "Baghdad Battery"</li>
-    
-    </ul>
-    {% endbox_1 %}
+    {# IMAGES #}
+    <div class="flex flex-col gap-4">
+        <figure class="max-w-[15rem]">
+            <img src="/_public/img/mystery_park_pyramid_beer_bar.jpg" title="Mystery Park Pyramid Beer Bar" class="h-fit">
+            <figcaption class="text-sm mt-1 leading-[1.2]">There was a beer bar shaped like a Pyramid and I'm obsessed with it</figcaption>
+        </figure>
+    </div>
+
+    {# *********************************************************** MAYA ************************************************************ #}
+
+    {# IMAGES #}
+    <div class="flex flex-col h-full justify-end gap-4">
+        <figure class="max-w-[10rem]">
+            <img src="/_public/img/mysterypark_maya_pyramid.jpg" title="Image used in the brochure" class="h-fit">
+        </figure>
+    </div>
+
+    <div class="flex flex-col">
+        {# PAVILION 3 - MAYA #}
+        {% box_1 "Pavilion 3 - Maya" %}
+        {% renderFile "src/have-you-been-to-the-mystery-park/Maya_A_nation_of_brilliant_astronomers.md" %}
+        {% endbox_1 %}
+        {% box_1 "Brochures", "", "!text-[0.75rem]" %}
+        <a href="/_public/docs/mysterypark_maya_en.pdf" target="_blank">mysterypark_maya_en.pdf</a><br>
+        <a href="/_public/docs/mysterypark_maya_fr.pdf" target="_blank">mysterypark_maya_fr.pdf</a><br>
+        <a href="/_public/docs/mysterypark_maya_de.pdf" target="_blank">mysterypark_maya_de.pdf</a>
+        {% endbox_1 %}
+    </div>
 
 </div>
 
