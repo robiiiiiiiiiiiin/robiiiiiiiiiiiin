@@ -13,3 +13,5 @@ Realizing today that astronomical coordinates were incorporated into the structu
 <br>
 
 Gods were portrayed as real beings, even though they were superbeings - but always in direct contact with the priests. They were the masters deciding on life and death, and they even created the most outrageous hybrid beings - the horror visions of today's genetic engineering. The sphinx, half man and half lion, is only one example. Holy bulls were creatures that were buried in the largest sarcophagi mankind has ever seen (in Saqqara).
+
+*--- The doc concluded with a scene where the sarcophagus from the burial chamber was propulsed to the sky, like the pyramid was a kind of elevator, or launcher to the stars ---*
