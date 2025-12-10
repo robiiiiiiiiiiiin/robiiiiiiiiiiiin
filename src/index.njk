@@ -17,19 +17,16 @@ title: Homepage
         <a href="/slumber">⏾ Slumber/</a>
         {% endbox_1 %}
         {% box_1 %}
-        <a href="/acab">ⒶCⒶB/</a>
-        {% endbox_1 %}
-        {% box_1 %}
         <a href="/geodetective">Geodetective/</a>
-        {% endbox_1 %}
-        {% box_1 %}
-        <a href="/zines">zines/</a>
         {% endbox_1 %}
         {% box_1 %}
         <a href="/etiquettes">étiquettes/</a>
         {% endbox_1 %}
         {% box_1 %}
         <a href="/have-you-been-to-the-mystery-park">Have you been to the mystery park ?</a>
+        {% endbox_1 %}
+        {% box_1 %}
+        <a href="/acab">ⒶCⒶB/</a>
         {% endbox_1 %}
     </div>
 </div>
@@ -50,7 +47,7 @@ title: Homepage
         <p>⁕ Pick some flowers in the street and gift them to your friends when they invite you over</p>
         {% endbox_1 %}
         {% box_1 "friends" %}
-            {% renderFile "src/friends.md" %}
+        {% renderFile "src/friends.md" %}
         {% endbox_1 %}
     </div>
 
@@ -60,6 +57,16 @@ title: Homepage
         <video controls>
             <source src="/_public/video/The_Last_of_the_Star_Makers_intro.mp4" type="video/mp4">
         </video>
+        {% endbox_1 %}
+    </div>
+    
+    {% box_1 %}
+    <a href="/tout-ce-que-je-ne-t-ai-jamais-ecrit">Tout ce que je ne t'ai jamais écrit/</a>
+    {% endbox_1 %}
+
+    <div class="ml-auto">
+        {% box_1 "lavomatic.md", "", "!max-h-[12rem]" %}
+        {% renderFile "src/lavomatic_gnagnagna.md" %}
         {% endbox_1 %}
     </div>
 

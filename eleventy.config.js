@@ -12,7 +12,7 @@ export default function (eleventyConfig) {
     // Configure dotenv based on NODE_ENV
     const isDevelopment = process.env.NODE_ENV === 'development';
     const isProduction = process.env.NODE_ENV === 'production';
-    
+
     if (isDevelopment) {
         dotenv.config({ path: '.env.dev' });
     } else if (isProduction) {
@@ -22,12 +22,12 @@ export default function (eleventyConfig) {
         dotenv.config({ path: '.env.dev' });
         dotenv.config(); // This will load .env if .env.local doesn't exist
     }
-    
+
     // ****************************************************************** BASE CONFIG ********************** //
     // Order matters, put this at the top of your configuration file.
     eleventyConfig.setInputDirectory("src");
     eleventyConfig.addPassthroughCopy("src/_public");
-    
+
     // Watch CSS and JS files for changes
     eleventyConfig.addWatchTarget("./src/_assets/style/");
     eleventyConfig.addWatchTarget("./src/_assets/js/");
