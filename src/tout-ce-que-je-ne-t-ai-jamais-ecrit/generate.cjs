@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-for (let i = 1; i <= 3200; i++) {
+for (let i = 1; i <= 3199; i++) {
+  if([].includes(i)) continue; // Skip specific numbers if needed
   const num = String(i).padStart(4, '0');
   const dir = path.join(__dirname, num);
   const filePath = path.join(dir, `${num}.njk`);
@@ -17,7 +18,7 @@ title: ${num}
 {% backButton "/tout-ce-que-je-ne-t-ai-jamais-ecrit/" %}
 {% titlePage "${num}" %}
 
-empty
+empty_
 `;
 
   // Write file
