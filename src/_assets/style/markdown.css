@@ -21,7 +21,7 @@
     list-style-type: decimal;
 }
 .markdown-wrapper ul {
-    list-style-type: square;
+    list-style-type: circle;
 }
 .markdown-wrapper ul > li > ul {
     list-style-type: circle;

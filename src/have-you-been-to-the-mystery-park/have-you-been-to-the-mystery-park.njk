@@ -145,28 +145,30 @@ title: Have you been to the Mystery Park ?
 
     {# *********************************************************** CONTACT ************************************************************ #}
 
-    <div class="flex flex-col">
-        {# PAVILION 5 - CONTACT #}
-        {% box_1 "Pavilion 5 - Contact" %}
-        {% renderFile "src/have-you-been-to-the-mystery-park/Contact_Culture_shock_or_inspiration.md" %}
-        {% endbox_1 %}
-        {% box_1 "Brochures", "", "!text-[0.75rem]" %}
-        <a href="/_public/docs/mysterypark_contact_en.pdf" target="_blank">mysterypark_contact_en.pdf</a><br>
-        <a href="/_public/docs/mysterypark_contact_fr.pdf" target="_blank">mysterypark_contact_fr.pdf</a><br>
-        <a href="/_public/docs/mysterypark_contact_de.pdf" target="_blank">mysterypark_contact_de.pdf</a>
-        {% endbox_1 %}
-    </div>
+    <div class="w-full flex flex-wrap gap-x-4 gap-y-8">
+        <div class="flex flex-col mr-auto">
+            {# PAVILION 5 - CONTACT #}
+            {% box_1 "Pavilion 5 - Contact" %}
+            {% renderFile "src/have-you-been-to-the-mystery-park/Contact_Culture_shock_or_inspiration.md" %}
+            {% endbox_1 %}
+            {% box_1 "Brochures", "", "!text-[0.75rem]" %}
+            <a href="/_public/docs/mysterypark_contact_en.pdf" target="_blank">mysterypark_contact_en.pdf</a><br>
+            <a href="/_public/docs/mysterypark_contact_fr.pdf" target="_blank">mysterypark_contact_fr.pdf</a><br>
+            <a href="/_public/docs/mysterypark_contact_de.pdf" target="_blank">mysterypark_contact_de.pdf</a>
+            {% endbox_1 %}
+        </div>
 
-    {# ASIDE ABOUT GOLDEN INCA MINIATURE AIRCRAFTS #}
-    {% box_1 "Aside about antique airplanes" %}
-    {% renderFile "src/have-you-been-to-the-mystery-park/Aside_about_the_antique_airplanes.md" %}
-    {% endbox_1 %}
+        {# ASIDE ABOUT GOLDEN INCA MINIATURE AIRCRAFTS #}
+        {% box_1 "Aside about antique airplanes" %}
+        {% renderFile "src/have-you-been-to-the-mystery-park/Aside_about_the_antique_airplanes.md" %}
+        {% endbox_1 %}
 
-    <div class="flex flex-col gap-4">
-        <figure class="max-w-[15rem]">
-            <img src="/_public/img/mysterypark-modeli-samoletov.jpg" title="" class="h-fit">
-            <figcaption class="text-sm mt-1 leading-[1.2]">1997 flying replicas of the antique airplanes</figcaption>
-        </figure>
+        <div class="flex flex-col gap-4">
+            <figure class="max-w-[15rem]">
+                <img src="/_public/img/mysterypark-modeli-samoletov.jpg" title="" class="h-fit">
+                <figcaption class="text-sm mt-1 leading-[1.2]">1997 flying replicas of the antique airplanes</figcaption>
+            </figure>
+        </div>
     </div>
 
     {# *********************************************************** NAZCA ************************************************************ #}
@@ -183,10 +185,10 @@ title: Have you been to the Mystery Park ?
         {% endbox_1 %}
     </div>
     <div class="flex flex-col gap-4">
-    <figure class="max-w-[12rem]">
-        <img src="/_public/img/mysterypark-nazca-astronaut.jpg" title="" class="h-fit">
-        <figcaption class="text-sm mt-1 leading-[1.2]">The Nazca's "Astronaut", on of my favorites geoglyph</figcaption>
-    </figure>
+        <figure class="max-w-[12rem]">
+            <img src="/_public/img/mysterypark-nazca-astronaut.jpg" title="" class="h-fit">
+            <figcaption class="text-sm mt-1 leading-[1.2]">The Nazca's "Astronaut", on of my favorites geoglyph</figcaption>
+        </figure>
     </div>
 
     {# *********************************************************** CHALLENGE ************************************************************ #}
@@ -204,9 +206,8 @@ title: Have you been to the Mystery Park ?
     </div>
 </div>
 
-
 <div class="flex justify-center">
-<div class="whitespace-pre font-mono text-[0.5rem]">
+    <div class="whitespace-pre font-mono text-[0.5rem]">
             .     .       .  .   . .   .   . .    +  .
   .     .  :     .    .. :. .___---------___.
        .  .   .    .  :.:. _".^ .^ ^.  '.. :"-_. .
@@ -234,6 +235,5 @@ title: Have you been to the Mystery Park ?
  .   .       .      :  .   .: ::/  .  .::\
 </div>
 </div>
-
 
 {# <img src="/_public/img/mysterypark_gif_2005.gif" alt="Random Mystery Park gif featured on their old website"> #}
