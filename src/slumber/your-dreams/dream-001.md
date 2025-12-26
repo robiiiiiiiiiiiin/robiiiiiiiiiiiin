@@ -1,0 +1,1 @@
+I dreamed that a girl taught me how to levitate objects by controlling energy. Then a robot that was kind of controlled by my girlfriend gave me a hug, but it went haywire and tried to kill me, so I ran away doing crazy parkour, jumping from roof to roof.

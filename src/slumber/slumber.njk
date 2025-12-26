@@ -32,14 +32,23 @@ title: ⏾ Slumber
         </div> #}
     </div>
 
-    {% box_1 "" %}
-    {% endbox_1 %}
-    {% box_1 "" %}
-    {% endbox_1 %}
-    {% box_1 "" %}
-    {% endbox_1 %}
-    {% box_1 "" %}
-    {% endbox_1 %}
+    <div class="grow flex flex-col gap-4">
+        <div class="flex gap-x-4 gap-y-8 flex-wrap">
+            {% box_1 "" %}
+            {% endbox_1 %}
+            {% box_1 "" %}
+            {% endbox_1 %}
+            {% box_1 "" %}
+            {% endbox_1 %}
+            {% box_1 "" %}
+            {% endbox_1 %}
+        </div>
+        <div class="ml-auto">
+            {% box_1 "What did you dream about ?" %}
+                <a href="/slumber/your-dreams">⏾ Your dreams/</a>
+            {% endbox_1 %}
+        </div>
+    </div>
 
     {# FEVER DREAM #}
     <div class="relative">
@@ -66,8 +75,8 @@ title: ⏾ Slumber
     </div>
 
     <div class="flex flex-col">
-    <div class="mb-4">
-        <p class=" whitespace-pre font-mono text-[0.59rem] white">
+        <div class="mb-4">
+            <p class=" whitespace-pre font-mono text-[0.59rem] white">
 '    ' .                              +'                .                       
   .                                                      +                      
                 .                 +               o               _|_          '
@@ -91,10 +100,10 @@ title: ⏾ Slumber
                           +         *                           '   ..          
                     *    +             *                                   . .  
         </p>
-    </div>
-    {% box_1 "The_universal_fever_dream.md" %}
-    {% renderFile "src/slumber/The_universal_fever_dream.md" %}
-    {% endbox_1 %}
+        </div>
+        {% box_1 "The_universal_fever_dream.md" %}
+        {% renderFile "src/slumber/The_universal_fever_dream.md" %}
+        {% endbox_1 %}
     </div>
 
     <div class="flex flex-col">

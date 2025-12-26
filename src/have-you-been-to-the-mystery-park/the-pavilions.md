@@ -1,5 +1,5 @@
 The main attractions were located in the pavilions at the end of each branches.
-Each attraction had a specific theme, always related to conspiracy theories, ancient civilizations, extraterrestrials, etc.
+Each attraction had a specific theme, always related to theories about ancient civilisations.
 It was often about the ancient astronauts theory.
 
 The attractions were more like what 4DX is today than rollercoasters. It has a setup where you were sometimes sitting, sometimes standing, there were some physical props and a lot of special effects using lights, lasers, holograms amd smoke.
