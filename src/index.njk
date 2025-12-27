@@ -13,16 +13,16 @@ title: Homepage
     {# LINKS TO PAGES #}
     {% endbox_1 %}
     <div class="flex flex-col gap-2">
-        {% box_1 %}
+        {% box_1 "", "ml-12" %}
         <a href="/slumber">⏾ Slumber/</a>
         {% endbox_1 %}
         {% box_1 %}
         <a href="/have-you-been-to-the-mystery-park">Have you been to the mystery park ?</a>
         {% endbox_1 %}
-        {% box_1 %}
+        {% box_1 "", "mt-auto ml-12" %}
         <a href="/acab">ⒶCⒶB/</a>
         {% endbox_1 %}
-        {% box_1 %}
+        {% box_1 "", "mt-auto ml-4" %}
         <a href="/geodetective">geodetective/</a>
         {% endbox_1 %}
     </div>
@@ -43,26 +43,49 @@ title: Homepage
         {% box_1 "flowers" %}
         <p>⁕ Pick some flowers in the street and gift them to your friends when they invite you over</p>
         {% endbox_1 %}
-        {% box_1 "friends" %}
+        {% box_1 "the park" %}
         {% renderFile "src/friends.md" %}
+        {% endbox_1 %}
+        <div class="h-4"></div>
+        {% box_1 "friends (with websites)" %}
+        <a href="https://raviolilavande.neocities.org/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-[1ch]">
+            <img src="/_public/img/ravioli.png" alt="Ravioli Lavande icon" class="w-5 h-5">
+            <span>Ravioli Lavande</span>
+        </a>
+        <br>
+        <a href="https://nicolasgay.ch/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-[1ch]">
+            <img src="/_public/img/beetle.ico" alt="Nicolas Gay icon" class="w-5 h-5">
+            <span>Nicolas Gay</span>
+        </a>
         {% endbox_1 %}
     </div>
 
-    {# COURAGE LE CHIEN FROUSSARG #}
-    <div class="ml-auto">
-        {% box_1 "The_Last_of_the_Star_Makers_intro.mp4" %}
-        <video controls>
-            <source src="/_public/video/The_Last_of_the_Star_Makers_intro.mp4" type="video/mp4">
-        </video>
-        {% endbox_1 %}
+    <div class="ml-auto flex flex-col justify-between gap-4">
+        {# COURAGE LE CHIEN FROUSSARG #}
+        <div class="ml-auto">
+            {% box_1 "The_Last_of_the_Star_Makers_intro.mp4" %}
+            <video controls>
+                <source src="/_public/video/The_Last_of_the_Star_Makers_intro.mp4" type="video/mp4">
+            </video>
+            {% endbox_1 %}
+        </div>
+
+        <div class="flex flex-col gap-2">
+            {% box_1 "", "ml-6" %}
+            <a href="/tout-ce-que-je-ne-t-ai-jamais-ecrit">Tout ce que je ne t'ai jamais écrit/</a>
+            {% endbox_1 %}
+            {% box_1 "", "ml-16" %}
+            <a href="/ca-ira">Ça ira/</a>
+            {% endbox_1 %}
+        </div>
     </div>
-    
-    <div class="flex flex-col gap-2">
-        {% box_1 %}
-        <a href="/tout-ce-que-je-ne-t-ai-jamais-ecrit">Tout ce que je ne t'ai jamais écrit/</a>
-        {% endbox_1 %}
-        {% box_1 %}
-        <a href="/ca-ira">Ça ira/</a>
+
+    {# WORLD OF TOMORROW #}
+    <div class="">
+        {% box_1 "World_of_tomorrow_extract.mp4", "lg:ml-16 mt-16" %}
+        <video controls>
+            <source src="/_public/video/World_of_tomorrow_extract.mp4" type="video/mp4">
+        </video>
         {% endbox_1 %}
     </div>
 
