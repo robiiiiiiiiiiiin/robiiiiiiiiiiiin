@@ -4,7 +4,7 @@
 .markdown-wrapper > * {
     white-space: pre-line;
 }
-.markdown-wrapper p+p {
+.markdown-wrapper >*+* {
     margin-top: 1rem;
 }
 .markdown-wrapper a {
