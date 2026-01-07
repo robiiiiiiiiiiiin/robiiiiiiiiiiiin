@@ -1,6 +1,6 @@
 All this has been created by Erich von Däniken.
 
-<img class="max-w-[15rem]" src="/_public/img/mysterypark_erich_von_daniken.jpg" title="Erich von Däniken">
+<img class="max-w-[15rem]" src="/_public/img/mysterypark_Erich_von_daniken.jpg" title="Erich von Däniken">
 
 Däniken is born in 1935 in Switzerland and is the author of multiple books but he became known mainly because of "The Chariots of the Gods". A book theorising that humanity has been visited by extraterrestrials who brought us knowledges. Apparently, we can find evidence of this in numerous archeological sites. This book greatly contributed to popularizing the <strong>Ancient Astronauts theory</strong>.
 
