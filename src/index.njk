@@ -70,12 +70,17 @@ title: Homepage
 
     <div class="ml-auto flex flex-col justify-between gap-4">
         {# COURAGE LE CHIEN FROUSSARG #}
-        <div class="ml-auto">
+        <div class="relative ml-auto">
             {% box_1 "The_Last_of_the_Star_Makers_intro.mp4" %}
             <video controls poster="/_public/img/home_Last_of_the_Starmaker_poster.png">
                 <source src="/_public/video/The_Last_of_the_Star_Makers_intro.mp4" type="video/mp4">
             </video>
             {% endbox_1 %}
+
+            {# CAT CITY #}
+            <a href="https://www.youtube.com/watch?v=NWeyUpqnKuk&list=PLnTJPgOD7oylHA_5qdvDCNvnjPk1Fd0_c&index=7" target="_blank" rel="noopener noreferrer" class="absolute right-0 top-[calc(100%_-_10px)] mx-auto">
+                <img src="/_public/img/Cat_city_lost_cat_please_call.png" class="w-[140px]" >
+            </a>
         </div>
 
         <div class="flex flex-col gap-2">
@@ -102,7 +107,7 @@ title: Homepage
 
     <div class="flex flex-col justify-between gap-4">
         {# LAVOMATIC #}
-        <div class="ml-auto">
+        <div class="relative ml-auto">
             {% box_1 "lavomatic.md", "", "!max-h-[12rem]" %}
             {% renderFile "src/lavomatic_gnagnagna.md" %}
             {% endbox_1 %}
@@ -118,9 +123,11 @@ title: Homepage
         <div></div>
     </div>
 
-    {% box_1 "newsletter" %}
-        <p><a href="https://6e747040.sibforms.com/serve/MUIFAJkcz815u1BL8kmChI9pQPhP7yxPVgxgPLLA5YgtsLaLEI7fX4QNHOGY_g4Vr1XRwuzRlfSNu8BsyMK55mIF0bKVlZV9qtjVm3FKJvOlzAP-1NDtovs-k4RLjkbpVCgjDbuaU7QtSNu9Nt2by0j3FxaZ7aK88Zj7VcipqYtToPXu5WPxdM94TdITZwFCFRQDhjGYdS-FpNGg8g==" target="_blank" rel="noopener noreferer">SUBSCRIBE to my newsletter</a> :)</p>
-    {% endbox_1 %}
+    <div class="w-full flex gap-x-4 gap-y-8 flex-wrap">
+        {% box_1 "newsletter" %}
+            <p><a href="https://6e747040.sibforms.com/serve/MUIFAJkcz815u1BL8kmChI9pQPhP7yxPVgxgPLLA5YgtsLaLEI7fX4QNHOGY_g4Vr1XRwuzRlfSNu8BsyMK55mIF0bKVlZV9qtjVm3FKJvOlzAP-1NDtovs-k4RLjkbpVCgjDbuaU7QtSNu9Nt2by0j3FxaZ7aK88Zj7VcipqYtToPXu5WPxdM94TdITZwFCFRQDhjGYdS-FpNGg8g==" target="_blank" rel="noopener noreferer">SUBSCRIBE to my newsletter</a> :)</p>
+        {% endbox_1 %}
+    </div>
 
 </div>
 
