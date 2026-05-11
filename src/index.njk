@@ -12,7 +12,7 @@ title: Homepage
 
     {# LINKS TO PAGES #}
     {% endbox_1 %}
-    <div class="flex flex-col gap-2">
+    <div class="grow flex flex-col gap-2">
         {% box_1 "",
         "ml-12" %}
         <a href="/slumber">⏾ Slumber/</a>
@@ -23,11 +23,15 @@ title: Homepage
         {% box_1 "", "mt-auto ml-12" %}
         <a href="/acab">ⒶCⒶB/</a>
         {% endbox_1 %}
-        {% box_1 "", "ml-12 self-end" %}
+        {% box_1 "", "ml-32" %}
         <a href="/primptempd" class="!text-pink">C'est le primptempds :) /</a>
         {% endbox_1 %}
         {% box_1 "", "ml-4" %}
         <a href="/geodetective">geodetective/</a>
+        {% endbox_1 %}
+        {# Tornadoes #}
+        {% box_1 "", "ml-auto" %}
+            <a href="/tornadoes">tornadoes/</a>
         {% endbox_1 %}
     </div>
 </div>
@@ -105,20 +109,23 @@ title: Homepage
         {% endbox_1 %}
     </div>
 
-    <div class="flex flex-col justify-between gap-4">
+    <div class="grow flex flex-col justify-between gap-4">
         {# LAVOMATIC #}
-        <div class="relative ml-auto">
+        <div class="relative">
             {% box_1 "lavomatic.md", "", "!max-h-[12rem]" %}
             {% renderFile "src/lavomatic_gnagnagna.md" %}
             {% endbox_1 %}
         </div>
 
-        {# Tornadoes #}
-        <div class="ml-auto">
-        {% box_1 "", "ml-12" %}
-            <a href="/tornadoes">tornadoes/</a>
+        {# Moonlit exposed #}
+        {% box_1 "", "ml-auto mt-12" %}
+            The website that started it all<br>
+            <a href="https://moonlit.exposed/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-[1ch]">
+                <img src="/_public/img/moonlit_exposed_favicon.png" class="w-5 h-5">
+                <span>moonlit.exposed</span>
+            </a>
+            <br>I go on this website regularly and I'm flabbergasted at how infinite it is
         {% endbox_1 %}
-        </div>
 
         <div></div>
     </div>
