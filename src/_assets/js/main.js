@@ -1,2 +1,2 @@
 // Main entry point for all JavaScript modules
-import './isotope.js';
+import './cassette-tape.js';
