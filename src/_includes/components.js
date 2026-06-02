@@ -52,7 +52,11 @@ export default function(eleventyConfig) {
                         <div class="w-[8.5ch]"> ______ 
 | <a href="${externalLink}" target="_blank" rel="noopener noreferrer">src&gt;</a> |
 |......|
-<span>|_</span><button type="button" class="play text-[#57d5ff] cursor-pointer">▶</button>__<button type="button" class="pause text-[#57d5ff] cursor-pointer">&#9208;&#xFE0E;</button><span>_|</span>
+<div class="flex items-end">
+    <span>|_</span><button type="button" class="play text-[#57d5ff] cursor-pointer">▶</button>__<button type="button" class="pause text-[#57d5ff] w-[1ch] h-[16px] cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 28 26"><path d="M0 0h10v26H0zM18 0h10v26H18z" fill="currentColor"></path>
+    </svg>
+    </button><span>_|</span>
+</div>
 </div>
                         <div class="w-[4ch]">.++.
 +  +
