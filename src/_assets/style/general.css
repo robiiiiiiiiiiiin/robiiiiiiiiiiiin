@@ -13,3 +13,9 @@ a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
+.museum-style a {
+    color: #ff2ee0;
+    font-weight: bold;
+}
