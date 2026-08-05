@@ -1,17 +1,16 @@
 ---
-layout: layout_contentPage.njk
+layout: layout_museum.njk
 title: museum
 ---
-{% backButton "/" %}
-{% titlePage "museum" %}
 
-<div class="flex items-center museum-style">
+<div class="relative flex items-center museum-style min-h-[90vh]">
+
+    <div class="absolute top-0 left-0">
+        {% backButton "/", "<" %}
+    </div>
 
 {# 130ch x 35ch #}
-    <div class="relative w-[60rem] h-[37rem] text-[.75rem] mx-auto font-mono whitespace-pre border border-[#78727e] rounded-md bg-[#030303] perspective-[60rem]">
-                                                                                                                                 
-                                                                                                                                 
-                                                                                                                                 
+    <div class="relative w-[145.95vh] max-w-[60rem] h-[90vh] max-h-[37rem] text-[min(2.05vh,0.84rem)] mx-auto font-mono whitespace-pre border border-[#78727e] rounded-md bg-[#030303] perspective-[60rem]">
                                                                                                                                  
                                                                                                                                  
                                                                                                                                  
@@ -27,7 +26,7 @@ title: museum
                 |                                                                                                  |              
                 |                                                                                                  |              
                 |                                                                                                  |              
-                |    {% museumImage "John_Martin-Le_Pandemonium.jpeg", "John Martin - Le Pandemonium", "absolute left-[17.5%] top-[36%] w-[31%]" %}                                                                                        {% museumImage "John_Martin-Destruction_of_Pompeii_and_Herculaneum.jpg", "John Martin - Destruction of Pompeii and Herculaneum", "absolute right-[17%] top-[37%] w-[31%]" %}      |              
+                |    {% museumImage "John_Martin-Le_Pandemonium.jpeg", "John Martin - Le Pandemonium", "absolute left-[17.5%] top-[35%] w-[31%]" %}                                                                                        {% museumImage "John_Martin-Destruction_of_Pompeii_and_Herculaneum.jpg", "John Martin - Destruction of Pompeii and Herculaneum", "absolute right-[17%] top-[36%] w-[31%]" %}      |              
               ,)                                                                                                    ),             
               , (                                                                                                  ),,            
              (__,)                                                                                                (,__)           

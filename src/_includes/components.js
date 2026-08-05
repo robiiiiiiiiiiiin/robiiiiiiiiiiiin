@@ -20,9 +20,9 @@ export default function(eleventyConfig) {
     });
 
     /************************************************************************ BACK BUTTON ************************************************************************/
-    eleventyConfig.addShortcode("backButton", function(url = "/") {
+    eleventyConfig.addShortcode("backButton", function(url = "/", text = "< Back") {
         return `
-        <a href="${url}" class="inline-block text-sm ">< Back</a>
+        <a href="${url}" class="inline-block text-sm ">${text}</a>
         `;
     });
 

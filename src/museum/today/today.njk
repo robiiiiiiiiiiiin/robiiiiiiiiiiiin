@@ -1,23 +1,22 @@
 ---
-layout: layout_contentPage.njk
+layout: layout_museum.njk
 title: museum
 ---
-{% backButton "/" %}
-{% titlePage "museum" %}
 
-<div class="flex items-center museum-style">
+<div class="relative flex items-center museum-style min-h-[90vh]">
 
-{# 130ch x 35ch #}    <div class="w-[60rem] h-[37rem] text-[.75rem] mx-auto font-mono whitespace-pre border border-[#78727e] rounded-md bg-[#030303]">
-                                                                                                                                 
+    <div class="absolute top-0 left-0">
+        {% backButton "/", "<" %}
+    </div>
+
+{# 130ch x 35ch #}    <div class="w-[145.95vh] max-w-[60rem] h-[90vh] max-h-[37rem] text-[min(2.05vh,0.84rem)] mx-auto font-mono whitespace-pre border border-[#78727e] rounded-md bg-[#030303]">
                                                                                                                                  
                                                                                                                                  
 –––.                   .................................................                                                         
    |                   | everything is weird in the galery of the past |                                                        
  <a href="/museum">()</a>|                   °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°                                                         
    |                                                                                                                             
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––|..                         
-                                                                                                 |..                         
-                                                                                                   |..
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––----|..                         
                                                                                                      |..                    
                                                                                                        |..                  
                                                                                                          |..                
@@ -42,7 +41,7 @@ title: museum
                                                                               |..                                                
                                                                                 |..                                              
                                                                                   |..                                            
-                                                                                    ––––––––––––––––––––––––––––––––––––––––––––––
+                                                                                    –––––––––––––––––––––––––––––––––––––––––––––
 </div>
 
 </div>
