@@ -16,7 +16,7 @@
 
     --font-title: 'Arial', sans-serif;
     --font-body: 'Arial', sans-serif;
-    --font-mono: monospace;
+    --font-mono: 'Courier New', monospace;
 
     --z-index-music-player: 50;
 
