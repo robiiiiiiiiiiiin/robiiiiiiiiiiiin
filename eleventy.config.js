@@ -27,6 +27,11 @@ export default function (eleventyConfig) {
     // Order matters, put this at the top of your configuration file.
     eleventyConfig.setInputDirectory("src");
     eleventyConfig.addPassthroughCopy("src/_public");
+    
+    // The if doesn't work :(
+    //if (isDevelopment) {
+    //    eleventyConfig.ignores.add("src/tout-ce-que-je-ne-t-ai-jamais-ecrit/**");
+    //}
 
     // Watch CSS and JS files for changes
     eleventyConfig.addWatchTarget("./src/_assets/style/");
