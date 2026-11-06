@@ -8,74 +8,88 @@ title: Homepage
 
     {# POPPY #}
     {% box_1 "poppy.gif" %}
-    <img src="/_public/img/poppy.gif" alt="Poppy">
-
-    {# LINKS TO PAGES #}
+        <img src="/_public/img/poppy.gif" alt="Poppy">
     {% endbox_1 %}
-    <div class="grow flex flex-col gap-2">
-        {% box_1 "",
-        "ml-12" %}
-        <a href="/slumber">⏾ Slumber/</a>
-        {% endbox_1 %}
-        {% box_1 %}
-        <a href="/have-you-been-to-the-mystery-park">Have you been to the mystery park ?</a>
-        {% endbox_1 %}
-        {% box_1 "", "mt-auto ml-12" %}
-        <a href="/acab">ⒶCⒶB/</a>
-        {% endbox_1 %}
-        {% box_1 "", "ml-32" %}
-        <a href="/primptempd" class="!text-pink">C'est le primptempds :) /</a>
-        {% endbox_1 %}
-        {% box_1 "", "ml-4" %}
-        <a href="/geodetective">geodetective/</a>
-        {% endbox_1 %}
-        {# Tornadoes #}
-        {% box_1 "", "ml-auto" %}
-            <a href="/tornadoes">tornadoes/</a>
-        {% endbox_1 %}
+
+    <div class="flex flex-col gap-y-8 grow">
+        {# BREAKING NEWS #}
+        <div class="flex flex-col ml-auto">
+            {% box_1 "· = ○ ✦ Breaking newwwwwws ✦ ○ = ·","","!text-[0.875rem]" %}
+                <div>11.06 - The museum is officially open!</div>
+                <div>11.06 - Breaking newwwwws panel is there!</div>
+            {% endbox_1 %}
+        </div>
+
+        {# LINKS TO PAGES #}
+        <div class="grow flex flex-col gap-2">
+            {% box_1 "",
+            "ml-12" %}
+            <a href="/slumber">⏾ Slumber/</a>
+            {% endbox_1 %}
+            {% box_1 %}
+            <a href="/have-you-been-to-the-mystery-park">Have you been to the mystery park ?</a>
+            {% endbox_1 %}
+            {% box_1 "", "mt-auto ml-12" %}
+            <a href="/acab">ⒶCⒶB/</a>
+            {% endbox_1 %}
+            {% box_1 "", "ml-32" %}
+            <a href="/primptempd" class="!text-pink">C'est le primptempds :) /</a>
+            {% endbox_1 %}
+            {% box_1 "", "ml-4" %}
+            <a href="/geodetective">geodetective/</a>
+            {% endbox_1 %}
+            {# Tornadoes #}
+            {% box_1 "", "ml-auto" %}
+                <a href="/tornadoes">tornadoes/</a>
+            {% endbox_1 %}
+        </div>
     </div>
+
 </div>
 
 <div class="flex flex-wrap gap-x-4 gap-y-8 mt-8">
 
-    {# RANDOM THOUGHT #}
-    <div class="flex flex-col">
-        {% box_1 "🎔❁⚘❦" %}
-        <p>⁕ Send handwritten letters to your friends
-            ⁕ Put trinkets in their mailbox
-        </p>
-        {% endbox_1 %}
-        {% box_1 "food" %}
-        <p>⁕ Plant fruit trees in the street
-            ⁕ Steal at the supermarket</p>
-        {% endbox_1 %}
-        {% box_1 "flowers" %}
-        <p>⁕ Pick some flowers in the street and gift them to your friends when they invite you over</p>
-        {% endbox_1 %}
-        {% box_1 "the park" %}
-        {% renderFile "src/friends.md" %}
-        {% endbox_1 %}
-        <div class="h-4"></div>
-        {% box_1 "friends (with websites)" %}
-        <a href="https://raviolilavande.neocities.org/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-[1ch]">
-            <img src="/_public/img/ravioli.png" alt="Ravioli Lavande icon" class="w-5 h-5">
-            <span>Ravioli Lavande</span>
-        </a>
-        <a href="https://nicolasgay.ch/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-[1ch]">
-            <img src="/_public/img/beetle.ico" alt="Nicolas Gay icon" class="w-5 h-5">
-            <span>Nicolas Gay</span>
-        </a>
-        <a href="https://crousti.fun/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-[1ch]">
-            <img src="/_public/img/croustifun.ico" alt="Il serait temps de mettre une favicon sur crousti.fun" class="w-5 h-5">
-            <span>Crousti.fun</span>
-        </a>
-        {% endbox_1 %}
-        {% box_1 "n̴̖̓ŏ̷̧ì̸̗̕s̴̗̘͗e̵͚͂", "mt-8 ml-auto" %}
-            <a href="/noise">n̶̡̐͜ơ̷̇ͅi̸̡̦̾̋s̴̙̗̈́e̸̡͒/</a>
-        {% endbox_1 %}
+    <div>
+
+        {# RANDOM THOUGHT #}
+        <div class="flex flex-col">
+            {% box_1 "🎔❁⚘❦" %}
+            <p>⁕ Send handwritten letters to your friends
+                ⁕ Put trinkets in their mailbox
+            </p>
+            {% endbox_1 %}
+            {% box_1 "food" %}
+            <p>⁕ Plant fruit trees in the street
+                ⁕ Steal at the supermarket</p>
+            {% endbox_1 %}
+            {% box_1 "flowers" %}
+            <p>⁕ Pick some flowers in the street and gift them to your friends when they invite you over</p>
+            {% endbox_1 %}
+            {% box_1 "the park" %}
+            {% renderFile "src/friends.md" %}
+            {% endbox_1 %}
+            <div class="h-4"></div>
+            {% box_1 "friends (with websites)" %}
+            <a href="https://raviolilavande.neocities.org/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-[1ch]">
+                <img src="/_public/img/ravioli.png" alt="Ravioli Lavande icon" class="w-5 h-5">
+                <span>Ravioli Lavande</span>
+            </a>
+            <a href="https://nicolasgay.ch/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-[1ch]">
+                <img src="/_public/img/beetle.ico" alt="" class="w-5 h-5">
+                <span>Nico Gay</span>
+            </a>
+            <a href="https://crousti.fun/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-[1ch]">
+                <img src="/_public/img/croustifun.ico" alt="Il serait temps de mettre une favicon sur crousti.fun" class="w-5 h-5">
+                <span>Crousti.fun</span>
+            </a>
+            {% endbox_1 %}
+            {% box_1 "n̴̖̓ŏ̷̧ì̸̗̕s̴̗̘͗e̵͚͂", "mt-8 ml-auto" %}
+                <a href="/noise">n̶̡̐͜ơ̷̇ͅi̸̡̦̾̋s̴̙̗̈́e̸̡͒/</a>
+            {% endbox_1 %}
+        </div>
     </div>
 
-    <div class="ml-auto flex flex-col justify-between gap-4">
+    <div class="grow flex flex-col justify-between gap-4">
         {# COURAGE LE CHIEN FROUSSARG #}
         <div class="relative ml-auto">
             {% box_1 "The_Last_of_the_Star_Makers_intro.mp4" %}
@@ -91,12 +105,29 @@ title: Homepage
         </div>
 
         <div class="flex flex-col gap-2">
-            {% box_1 "",
-            "ml-6" %}
+
+            {# MUSEUM #}
+            <div class="text-[0.75rem] whitespace-pre font-mono mt-32 mx-auto">
+                    |
+                   /^\
+                  /___\
+            ______|(_)|______
+          .^^^^^^^|___|^^^^^^^.
+         /     M U S E U M     \     
+        /_______________________\  
+    ____|=_______  .^.  _______=|___
+   /____|=|_|_|_| /.-.\ |_|_|_|=|____\
+   | __ |=|_|_|_|//   \\|_|_|_|=| __ |
+   |_||_|="""""""|| <a href="/museum" class="!text-pink font-bold">-o</a>||"""""""=|_||_|
+        "--------||___||--------"
+                 "/   \"
+                 /     \  <span class="text-[0.625rem]">(use the handle to enter)</span>
+            </div>
+
+            {% box_1 "","ml-auto" %}
             <a href="/tout-ce-que-je-ne-t-ai-jamais-ecrit">Tout ce que je ne t'ai jamais écrit/</a>
             {% endbox_1 %}
-            {% box_1 "",
-            "ml-16" %}
+            {% box_1 "","ml-auto mr-8" %}
             <a href="/ca-ira">Ça ira/</a>
             {% endbox_1 %}
         </div>
