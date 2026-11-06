@@ -15,9 +15,9 @@
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@fancyapps/ui": "^6.1.15",
     "dotenv": "^17.2.0",
-    "imagesloaded": "^5.0.0",
-    "isotope-layout": "^3.0.6"
+    "imagesloaded": "^5.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.5",

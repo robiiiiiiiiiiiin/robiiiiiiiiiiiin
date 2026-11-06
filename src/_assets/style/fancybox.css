@@ -1,0 +1,15 @@
+body .fancybox__container .f-button {
+    position: relative;
+    background: transparent;
+}
+body .fancybox__container .f-button::after {
+    content: "X";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+body .fancybox__container .f-button svg {
+    display: none;
+}

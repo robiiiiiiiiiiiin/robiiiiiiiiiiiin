@@ -87,6 +87,6 @@ export default function(eleventyConfig) {
 
     /************************************************************************ MUSEUM IMAGE ************************************************************************/
     eleventyConfig.addShortcode("museumImage", function(filename = "", title = "", customClass = "") {
-        return `<a href="/_public/img/museum/${filename}" class="border border-white ${customClass}"><img src="/_public/img/museum/${filename}" class="w-full" title="${title}"></a>`
+        return `<a href="/_public/img/museum/${filename}" data-fancybox class="border border-white ${customClass}"><img src="/_public/img/museum/${filename}" class="w-full" title="${title}"></a>`
     });
 };
