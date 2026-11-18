@@ -166,11 +166,17 @@ title: Homepage
         <div></div>
     </div>
 
-    <div class="w-full flex gap-x-4 gap-y-8 flex-wrap">
+    <div class="w-full h-full flex gap-x-4 gap-y-8 flex-wrap">
         {# NEWSLETTER #}
-        {% box_1 "newsletter" %}
-            <p><a href="https://6e747040.sibforms.com/serve/MUIFAJkcz815u1BL8kmChI9pQPhP7yxPVgxgPLLA5YgtsLaLEI7fX4QNHOGY_g4Vr1XRwuzRlfSNu8BsyMK55mIF0bKVlZV9qtjVm3FKJvOlzAP-1NDtovs-k4RLjkbpVCgjDbuaU7QtSNu9Nt2by0j3FxaZ7aK88Zj7VcipqYtToPXu5WPxdM94TdITZwFCFRQDhjGYdS-FpNGg8g==" target="_blank" rel="noopener noreferer">SUBSCRIBE to my newsletter</a> :)</p>
-        {% endbox_1 %}
+        <div class="grow flex flex-col justify-between">
+            <a href="https://letterboxd.com/film/lou-2014/" target="_blank" class="relative w-full h-full flex justify-between">
+                <img src="/_public/img/Dazzler.png" title="Lou! - Dazzler" class=" absolute top-0 w-28 rotate-[-18deg]">
+                <img src="/_public/img/Lou-Isohelie_et_Isocelle.png" title="Lou! - Isohélie et Isocelle" class=" absolute top-0 left-34 w-44 rotate-[12deg]">
+            </a>
+            {% box_1 "newsletter" %}
+                <p><a href="https://6e747040.sibforms.com/serve/MUIFAJkcz815u1BL8kmChI9pQPhP7yxPVgxgPLLA5YgtsLaLEI7fX4QNHOGY_g4Vr1XRwuzRlfSNu8BsyMK55mIF0bKVlZV9qtjVm3FKJvOlzAP-1NDtovs-k4RLjkbpVCgjDbuaU7QtSNu9Nt2by0j3FxaZ7aK88Zj7VcipqYtToPXu5WPxdM94TdITZwFCFRQDhjGYdS-FpNGg8g==" target="_blank" rel="noopener noreferer">SUBSCRIBE to my newsletter</a> :)</p>    
+            {% endbox_1 %}
+        </div>
 
         {# WHAT ONCE WAS #}
         <div class="flex items-end ml-auto sm:gap-[0.25rem]">
